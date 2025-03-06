@@ -16,9 +16,11 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="alert alert-danger" role="alert">
-                        Some fields are missing
-                    </div>
+                    <div class="col-12">
+                        <div class="alert alert-danger" role="alert">
+                            Some fields are missing
+                        </div>
+                    </div>  
                 </div>
                 <form>
                 <div class="row">
@@ -37,7 +39,7 @@
                     <div class="col-4">
                         <label class="pb-2">Amount</label>
                         <div class="input-group mb-3">
-                            <label><i class="fa-solid fa-dollar-sign"></i></label>
+                            <label><i class="fa-solid fa-dollar-sign me-2 mt-2"></i></label>
                             <input type="text" class="form-control" placeholder="Amount" aria-label="Card" aria-describedby="basic-addon1">
                         </div>
                     </div>
@@ -65,9 +67,12 @@
                     </div>
                     <div class="col-3">
                         <label class="pb-2">State</label>
-                        <div class="input-group mb-3">
-                            <input type="number" class="form-control" placeholder="Pick a state" aria-label="Card" aria-describedby="basic-addon1">
-                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pick a state</option>
+                            <option value="1">California</option>
+                            <option value="2">Texas</option>
+                            <option value="3">Florida</option>
+                          </select>
                     </div>
                     <div class="col-3">
                         <label class="pb-2">Postal Code</label>
